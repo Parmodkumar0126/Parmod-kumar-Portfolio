@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Parmod Kumar | AI & ML Portfolio</title>
 
-  <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -21,7 +20,6 @@
     }
   </script>
 
-  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
 
   <style>
@@ -32,130 +30,127 @@
     .rotate-slow {
       animation: spin 25s linear infinite;
     }
+    /* मोबाइल पर स्मूथ स्क्रॉलिंग के लिए */
+    html {
+      scroll-behavior: smooth;
+    }
   </style>
 </head>
 
 <body class="bg-gradient-to-br from-dark to-slate-900 text-gray-200">
 
-<!-- ================= HERO ================= -->
-<section class="min-h-screen flex items-center justify-center px-6">
-  <div class="max-w-6xl w-full grid md:grid-cols-2 gap-12 items-center">
+<section class="min-h-screen flex items-center justify-center px-6 py-12 md:py-0">
+  <div class="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 
-    <!-- LEFT -->
-    <div>
-      <h1 class="text-5xl font-bold mb-4">
+    <div class="order-2 md:order-1 text-center md:text-left">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">
         Hi, I'm <span class="text-primary">Parmod Kumar</span>
       </h1>
       <p class="text-xl text-gray-400 mb-6">
         AI & Machine Learning Enthusiast | MSc IT
       </p>
-      <p class="text-gray-300 mb-8">
+      <p class="text-gray-300 mb-8 max-w-lg mx-auto md:mx-0">
         MSc IT postgraduate with hands-on experience in Artificial Intelligence,
         Machine Learning, Computer Vision and Data Science.
       </p>
 
-      <div class="flex gap-4 flex-wrap">
-        <a href="#projects" class="bg-primary text-dark px-6 py-3 rounded-xl font-semibold">View Projects</a>
-        <a href="#contact" class="border border-primary px-6 py-3 rounded-xl font-semibold">Contact Me</a>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+        <a href="#projects" class="bg-primary text-dark px-6 py-3 rounded-xl font-semibold hover:opacity-90 transition text-center">View Projects</a>
+        <a href="#contact" class="border border-primary px-6 py-3 rounded-xl font-semibold hover:bg-primary/10 transition text-center">Contact Me</a>
 
-        <!-- RESUME BUTTON -->
         <a href="https://drive.google.com/uc?export=download&id=1MKD3xEUdmOkUtKHhkp9wBmUZQQr6d7Ju"
            target="_blank"
-           class="bg-card border border-primary px-6 py-3 rounded-xl font-semibold hover:bg-primary hover:text-dark transition">
-          📄 Download Resume
+           class="bg-card border border-primary px-6 py-3 rounded-xl font-semibold hover:bg-primary hover:text-dark transition text-center">
+          📄 Resume
         </a>
       </div>
     </div>
 
-    <!-- RIGHT -->
-    <div class="relative flex items-center justify-center">
+    <div class="relative flex items-center justify-center order-1 md:order-2 h-[350px] md:h-auto">
 
-      <!-- ROTATING SKILLS -->
-      <div class="absolute w-80 h-80 rotate-slow">
+      <div class="absolute w-64 h-64 md:w-80 md:h-80 rotate-slow scale-90 md:scale-100">
 
         <div class="absolute -top-6 left-1/2 -translate-x-1/2 text-center">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="w-9 mx-auto">
-          <span class="text-sm">Python</span>
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="w-8 md:w-9 mx-auto">
+          <span class="text-[10px] md:text-sm">Python</span>
         </div>
 
         <div class="absolute right-0 top-1/2 -translate-y-1/2 text-center">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg"
-               class="w-9 bg-white rounded p-1 mx-auto">
-          <span class="text-sm">OpenCV</span>
+               class="w-8 md:w-9 bg-white rounded p-1 mx-auto">
+          <span class="text-[10px] md:text-sm">OpenCV</span>
         </div>
 
         <div class="absolute -bottom-6 left-1/2 -translate-x-1/2 text-center">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg"
-               class="w-9 bg-white rounded p-1 mx-auto">
-          <span class="text-sm">Flask</span>
+               class="w-8 md:w-9 bg-white rounded p-1 mx-auto">
+          <span class="text-[10px] md:text-sm">Flask</span>
         </div>
 
         <div class="absolute left-0 top-1/2 -translate-y-1/2 text-center">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg"
-               class="w-9 mx-auto">
-          <span class="text-sm">ML</span>
+               class="w-8 md:w-9 mx-auto">
+          <span class="text-[10px] md:text-sm">ML</span>
         </div>
 
-        <div class="absolute top-6 right-12 text-center">
-          <i class="fas fa-language text-yellow-400"></i>
-          <span class="text-sm block">NLP</span>
+        <div class="absolute top-6 right-8 md:right-12 text-center">
+          <i class="fas fa-language text-yellow-400 text-sm md:text-base"></i>
+          <span class="text-[10px] md:text-sm block">NLP</span>
         </div>
 
-        <div class="absolute bottom-6 right-12 text-center">
-          <i class="fab fa-html5 text-orange-500"></i>
-          <span class="text-sm block">HTML</span>
+        <div class="absolute bottom-6 right-8 md:right-12 text-center">
+          <i class="fab fa-html5 text-orange-500 text-sm md:text-base"></i>
+          <span class="text-[10px] md:text-sm block">HTML</span>
         </div>
 
-        <div class="absolute bottom-6 left-12 text-center">
-          <i class="fas fa-file-word text-blue-400"></i>
-          <span class="text-sm block">MS Office</span>
+        <div class="absolute bottom-6 left-8 md:left-12 text-center">
+          <i class="fas fa-file-word text-blue-400 text-sm md:text-base"></i>
+          <span class="text-[10px] md:text-sm block">MS Office</span>
         </div>
 
-        <div class="absolute top-6 left-12 text-center">
-          <i class="fas fa-chart-line text-green-400"></i>
-          <span class="text-sm block">Data Analysis</span>
+        <div class="absolute top-6 left-8 md:left-12 text-center">
+          <i class="fas fa-chart-line text-green-400 text-sm md:text-base"></i>
+          <span class="text-[10px] md:text-sm block">Data Analysis</span>
         </div>
 
       </div>
 
-      <!-- PROFILE IMAGE -->
-      <div class="absolute w-44 h-44 rounded-full border-4 border-primary overflow-hidden">
-        <img src="profile (3).jpg" alt="Parmod Kumar" class="w-full h-full object-cover">
+      <div class="absolute w-36 h-36 md:w-44 md:h-44 rounded-full border-4 border-primary overflow-hidden shadow-2xl z-10">
+        <img src="profile.jpg" alt="Parmod Kumar" class="w-full h-full object-cover">
       </div>
 
     </div>
   </div>
 </section>
 
-<!-- ================= EDUCATION & SKILLS ================= -->
-<section class="min-h-screen px-6 py-20 bg-card">
+<section class="px-6 py-20 bg-card">
   <div class="max-w-5xl mx-auto">
-    <h2 class="text-4xl font-bold mb-10 text-center">Education & Skills</h2>
+    <h2 class="text-3xl md:text-4xl font-bold mb-10 text-center">Education & Skills</h2>
 
-    <div class="grid md:grid-cols-2 gap-10">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
 
-      <div class="bg-dark p-8 rounded-2xl shadow-xl">
+      <div class="bg-dark p-6 md:p-8 rounded-2xl shadow-xl">
         <h3 class="text-2xl font-semibold mb-4 text-primary">Education</h3>
         <ul class="space-y-4">
-          <li><b>MSc IT (2025)</b> – Govt. College Ropar (77.58%)</li>
-          <li><b>PGDCA (2024)</b> – Govt. College Ropar (75.5%)</li>
-          <li><b>B.A (2023)</b> – Govt. College Ropar (72.06%)</li>
+          <li><b class="text-primary">MSc IT (2025)</b> – Govt. College Ropar (77.58%)</li>
+          <li><b class="text-primary">PGDCA (2024)</b> – Govt. College Ropar (75.5%)</li>
+          <li><b class="text-primary">B.A (2023)</b> – Govt. College Ropar (72.06%)</li>
         </ul>
       </div>
 
-      <div class="bg-dark p-8 rounded-2xl shadow-xl">
+      <div class="bg-dark p-6 md:p-8 rounded-2xl shadow-xl">
         <h3 class="text-2xl font-semibold mb-4 text-primary">Technical Skills</h3>
-        <div class="flex flex-wrap gap-3">
-          <span class="px-4 py-2 bg-card rounded-full">Python</span>
-          <span class="px-4 py-2 bg-card rounded-full">OpenCV</span>
-          <span class="px-4 py-2 bg-card rounded-full">Flask</span>
-          <span class="px-4 py-2 bg-card rounded-full">NumPy</span>
-          <span class="px-4 py-2 bg-card rounded-full">Pandas</span>
-          <span class="px-4 py-2 bg-card rounded-full">Scikit-Learn</span>
-          <span class="px-4 py-2 bg-card rounded-full">HTML & CSS</span>
-          <span class="px-4 py-2 bg-card rounded-full">Data Analysis</span>
-          <span class="px-4 py-2 bg-card rounded-full">NLP</span>
-          <span class="px-4 py-2 bg-card rounded-full">MS Office</span>
+        <div class="flex flex-wrap gap-2 md:gap-3">
+          <span class="px-3 py-1 md:px-4 md:py-2 bg-card rounded-full text-sm">Python</span>
+          <span class="px-3 py-1 md:px-4 md:py-2 bg-card rounded-full text-sm">OpenCV</span>
+          <span class="px-3 py-1 md:px-4 md:py-2 bg-card rounded-full text-sm">Flask</span>
+          <span class="px-3 py-1 md:px-4 md:py-2 bg-card rounded-full text-sm">NumPy</span>
+          <span class="px-3 py-1 md:px-4 md:py-2 bg-card rounded-full text-sm">Pandas</span>
+          <span class="px-3 py-1 md:px-4 md:py-2 bg-card rounded-full text-sm">Scikit-Learn</span>
+          <span class="px-3 py-1 md:px-4 md:py-2 bg-card rounded-full text-sm">HTML & CSS</span>
+          <span class="px-3 py-1 md:px-4 md:py-2 bg-card rounded-full text-sm">Data Analysis</span>
+          <span class="px-3 py-1 md:px-4 md:py-2 bg-card rounded-full text-sm">NLP</span>
+          <span class="px-3 py-1 md:px-4 md:py-2 bg-card rounded-full text-sm">MS Office</span>
         </div>
       </div>
 
@@ -163,89 +158,86 @@
   </div>
 </section>
 
-<!-- ================= PROJECTS ================= -->
-<section id="projects" class="min-h-screen px-6 py-20">
+<section id="projects" class="px-6 py-20">
   <div class="max-w-6xl mx-auto">
-    <h2 class="text-4xl font-bold mb-12 text-center">Projects</h2>
+    <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">Projects</h2>
 
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
 
-      <div class="bg-card p-6 rounded-2xl shadow-xl">
+      <div class="bg-card p-6 rounded-2xl shadow-xl border border-slate-800 hover:border-primary transition">
         <i class="fas fa-eye text-blue-400 text-4xl mb-3"></i>
-        <h3 class="font-semibold">Object Detection</h3>
-        <p class="text-sm text-gray-400">CNN + OpenCV</p>
+        <h3 class="font-semibold text-lg">Object Detection</h3>
+        <p class="text-sm text-gray-400 mt-2">CNN + OpenCV based real-time detection system.</p>
       </div>
 
-      <div class="bg-card p-6 rounded-2xl shadow-xl">
+      <div class="bg-card p-6 rounded-2xl shadow-xl border border-slate-800 hover:border-primary transition">
         <i class="fas fa-user text-pink-400 text-4xl mb-3"></i>
-        <h3 class="font-semibold">Face Detection</h3>
-        <p class="text-sm text-gray-400">Computer Vision</p>
+        <h3 class="font-semibold text-lg">Face Detection</h3>
+        <p class="text-sm text-gray-400 mt-2">Computer Vision project for identifying human faces.</p>
       </div>
 
-      <div class="bg-card p-6 rounded-2xl shadow-xl">
+      <div class="bg-card p-6 rounded-2xl shadow-xl border border-slate-800 hover:border-primary transition">
         <i class="fas fa-comment-dots text-yellow-400 text-4xl mb-3"></i>
-        <h3 class="font-semibold">Sentiment Analysis</h3>
-        <p class="text-sm text-gray-400">NLP</p>
+        <h3 class="font-semibold text-lg">Sentiment Analysis</h3>
+        <p class="text-sm text-gray-400 mt-2">NLP model to analyze text emotions and sentiments.</p>
       </div>
 
-      <div class="bg-card p-6 rounded-2xl shadow-xl">
+      <div class="bg-card p-6 rounded-2xl shadow-xl border border-slate-800 hover:border-primary transition">
         <i class="fas fa-newspaper text-green-400 text-4xl mb-3"></i>
-        <h3 class="font-semibold">Web Scraping</h3>
-        <p class="text-sm text-gray-400">News Automation</p>
+        <h3 class="font-semibold text-lg">Web Scraping</h3>
+        <p class="text-sm text-gray-400 mt-2">Automated news gathering using Python scripts.</p>
       </div>
 
-      <div class="bg-card p-6 rounded-2xl shadow-xl">
+      <div class="bg-card p-6 rounded-2xl shadow-xl border border-slate-800 hover:border-primary transition">
         <i class="fas fa-brain text-purple-400 text-4xl mb-3"></i>
-        <h3 class="font-semibold">Mental Health Prediction</h3>
-        <p class="text-sm text-gray-400">ML Classification</p>
+        <h3 class="font-semibold text-lg">Mental Health Prediction</h3>
+        <p class="text-sm text-gray-400 mt-2">ML Classification to predict health patterns.</p>
       </div>
 
     </div>
   </div>
 </section>
 
-<!-- ================= CONTACT ================= -->
 <section id="contact" class="px-6 py-24 bg-card">
   <div class="max-w-5xl mx-auto text-center">
 
-    <h2 class="text-4xl font-bold mb-10">Contact Me</h2>
+    <h2 class="text-3xl md:text-4xl font-bold mb-10">Contact Me</h2>
 
-    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mb-12">
 
-      <a href="tel:+917973203785" class="bg-dark p-6 rounded-xl">
-        <i class="fas fa-phone text-green-400 text-2xl mb-2"></i>
-        <p>+91 7973203785</p>
+      <a href="tel:+917973203785" class="bg-dark p-4 md:p-6 rounded-xl hover:scale-105 transition">
+        <i class="fas fa-phone text-green-400 text-xl md:text-2xl mb-2"></i>
+        <p class="text-xs md:text-base">+91 7973203785</p>
       </a>
 
-      <a href="mailto:parmkumar6505@gmail.com" class="bg-dark p-6 rounded-xl">
-        <i class="fas fa-envelope text-red-400 text-2xl mb-2"></i>
-        <p>Email</p>
+      <a href="mailto:parmkumar6505@gmail.com" class="bg-dark p-4 md:p-6 rounded-xl hover:scale-105 transition">
+        <i class="fas fa-envelope text-red-400 text-xl md:text-2xl mb-2"></i>
+        <p class="text-xs md:text-base">Email</p>
       </a>
 
-      <a href="https://www.linkedin.com/" target="_blank" class="bg-dark p-6 rounded-xl">
-        <i class="fab fa-linkedin text-blue-500 text-2xl mb-2"></i>
-        <p>LinkedIn</p>
+      <a href="https://www.linkedin.com/" target="_blank" class="bg-dark p-4 md:p-6 rounded-xl hover:scale-105 transition">
+        <i class="fab fa-linkedin text-blue-500 text-xl md:text-2xl mb-2"></i>
+        <p class="text-xs md:text-base">LinkedIn</p>
       </a>
 
-      <a href="https://github.com/" target="_blank" class="bg-dark p-6 rounded-xl">
-        <i class="fab fa-github text-gray-300 text-2xl mb-2"></i>
-        <p>GitHub</p>
+      <a href="https://github.com/" target="_blank" class="bg-dark p-4 md:p-6 rounded-xl hover:scale-105 transition">
+        <i class="fab fa-github text-gray-300 text-xl md:text-2xl mb-2"></i>
+        <p class="text-xs md:text-base">GitHub</p>
       </a>
 
     </div>
 
-    <!-- EMAIL + WHATSAPP -->
-    <div class="bg-dark p-8 rounded-2xl max-w-xl mx-auto">
-      <h3 class="text-2xl font-semibold mb-6">Quick Message</h3>
+    <div class="bg-dark p-6 md:p-8 rounded-2xl max-w-xl mx-auto">
+      <h3 class="text-xl md:text-2xl font-semibold mb-6">Quick Message</h3>
 
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
         <a href="mailto:parmkumar6505@gmail.com?subject=Contact%20from%20Portfolio"
-           class="bg-primary text-dark px-6 py-3 rounded-xl font-semibold">
+           class="bg-primary text-dark px-6 py-3 rounded-xl font-semibold w-full sm:w-auto">
           📩 Send Email
         </a>
 
         <a href="https://wa.me/917973203785" target="_blank"
-           class="bg-green-500 text-black px-6 py-3 rounded-xl font-semibold">
+           class="bg-green-500 text-black px-6 py-3 rounded-xl font-semibold w-full sm:w-auto">
           💬 Send WhatsApp
         </a>
       </div>
@@ -254,7 +246,9 @@
   </div>
 </section>
 
+<footer class="text-center py-6 text-gray-500 text-sm">
+  &copy; 2025 Parmod Kumar. All rights reserved.
+</footer>
+
 </body>
 </html>
-
-
